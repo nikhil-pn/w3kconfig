@@ -12,10 +12,12 @@
     "@react-three/drei": "^9.109.1",
     "@react-three/fiber": "^8.16.8",
     "framer-motion": "^11.3.8",
+    "leaflet": "^1.9.4",
     "locomotive-scroll": "^4.1.4",
     "next": "14.2.5",
     "react": "^18",
     "react-dom": "^18",
+    "react-leaflet": "^4.2.1",
     "saas": "^1.0.0",
     "three": "^0.166.1"
   },

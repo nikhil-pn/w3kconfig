@@ -8,9 +8,13 @@ import dynamic from "next/dynamic";
 const Scene = dynamic(() => import("@/components/Scene"), {
   ssr: false,
 });
+const LeafletMap = dynamic(() => import("../components/Map/LeafletMap"), {
+  ssr: false,
+});
 
 export default function Home() {
   const [isLoading, setIsLoading] = useState(true);
+  const [showMap, setShowMap] = useState(false);
 
   useEffect(() => {
     (async () => {
@@ -20,6 +24,7 @@ export default function Home() {
         setIsLoading(false);
         document.body.style.cursor = "default";
         window.scrollTo(0, 0);
+         setShowMap(true);
       }, 5000);
     })();
   }, []);
@@ -32,6 +37,7 @@ export default function Home() {
           {isLoading && <Preloader />}
         </AnimatePresence>
         <Scene />
+        {showMap && <LeafletMap />}
       </main>
     </div>
   );

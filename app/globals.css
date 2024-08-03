@@ -39,6 +39,7 @@ main {
 }
 
 body {
+  cursor: url('../public/w3k-removebg-preview.png'),auto;
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(
       to bottom,

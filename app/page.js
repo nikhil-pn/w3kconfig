@@ -36,7 +36,7 @@ export default function Home() {
         <AnimatePresence mode="wait">
           {isLoading && <Preloader />}
         </AnimatePresence>
-        <Scene />
+        {/*<Scene />*/}
         {showMap && <LeafletMap />}
       </main>
     </div>

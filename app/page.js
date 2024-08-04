@@ -4,6 +4,7 @@ import { AnimatePresence } from "framer-motion";
 import Preloader from "../components/Preloader";
 import Navbar from "../components/NavBar/Navbar";
 import dynamic from "next/dynamic";
+import Timer from "@/components/Timer/timer";
 
 const Scene = dynamic(() => import("@/components/Scene"), {
   ssr: false,
@@ -27,11 +28,13 @@ export default function Home() {
   return (
     <div className="flex flex-col min-h-screen bg-black">
       <Navbar />
-      <main className="flex-grow flex items-center justify-center">
+      <main className="flex-grow items-center justify-center">
         <AnimatePresence mode="wait">
-          {isLoading && <Preloader />}
+          {isLoading && 
+          <Preloader />}
         </AnimatePresence>
         <Scene />
+        <Timer/>
       </main>
     </div>
   );

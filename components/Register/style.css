@@ -1,0 +1,30 @@
+.body{
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
+
+.blockk {
+    position: relative;
+    margin: 5% auto 5%;
+    width: 50%;
+    border-radius: 0.4cm;
+    height: 750px;
+    background: linear-gradient(
+        0deg,black,rgb(44,43,43)
+    );
+}
+
+.glow::before , .glow::after{
+    content: '';
+    position: absolute;
+    border-radius: 0.4cm;
+    left: -2px;
+    top: -2px;
+    background: linear-gradient(45deg,#e6fb04,#ff6600,#00ff66
+    ,#00ffff,#ff00ff,#ff0099,#6e0dd0,#ff3300,#099fff);
+    background-size: 400%;
+    width: calc(100% + 30px);
+    height: calc(100% + 30px);
+    z-index: -1;
+}

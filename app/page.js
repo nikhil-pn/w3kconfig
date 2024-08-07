@@ -5,6 +5,7 @@ import Preloader from "../components/Preloader";
 import Navbar from "../components/NavBar/Navbar";
 import dynamic from "next/dynamic";
 import Timer from "@/components/Timer/timer";
+import { RegisterPage } from "@/components/Register";
 
 const Scene = dynamic(() => import("@/components/Scene"), {
   ssr: false,
@@ -27,14 +28,14 @@ export default function Home() {
 
   return (
     <div className="flex flex-col min-h-screen bg-black">
-      <Navbar />
+      {/* <Navbar /> */}
       <main className="flex-grow items-center justify-center">
         <AnimatePresence mode="wait">
-          {isLoading && 
-          <Preloader />}
+          {isLoading && <Preloader />}
         </AnimatePresence>
         <Scene />
-        <Timer/>
+        <Timer />
+        {/* <RegisterPage /> */}
       </main>
     </div>
   );

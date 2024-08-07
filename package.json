@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "@radix-ui/react-label": "^2.1.0",
-    "@react-three/drei": "^9.109.1",
+    "@react-three/drei": "^9.109.2",
     "@react-three/fiber": "^8.16.8",
     "@tabler/icons-react": "^3.11.0",
     "clsx": "^2.1.1",
@@ -22,6 +22,7 @@
     "react": "^18",
     "react-confetti": "^6.1.0",
     "react-dom": "^18",
+    "react-icons": "^5.2.1",
     "saas": "^1.0.0",
     "tailwind-merge": "^2.4.0",
     "three": "^0.166.1",

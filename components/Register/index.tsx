@@ -8,7 +8,7 @@ import {
   IconBrandGoogle,
   IconBrandX,
 } from "@tabler/icons-react";
-// import './style.css';
+import './style.css';
 
 export function RegisterPage() {
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
@@ -16,7 +16,8 @@ export function RegisterPage() {
     console.log("Form submitted");
   };  
   return (
-    <div className="blockk glow max-w-md w-full mx-auto rounded-none md:rounded-2xl p-4 md:p-8 shadow-input bg-white dark:bg-zinc-950 hover:border-l-orange-300">
+    <div className="blockk">
+    <div className="glow max-w-md w-full mx-auto rounded-none md:rounded-2xl p-4 md:p-8 shadow-input bg-white dark:bg-zinc-950 hover:border-l-orange-300">
       <h2 className="font-bold text-xl text-neutral-800 dark:text-neutral-200">
         Register here
       </h2>
@@ -91,6 +92,7 @@ export function RegisterPage() {
           </button>
         </div>
       </form>
+    </div>
     </div>
   );
 }

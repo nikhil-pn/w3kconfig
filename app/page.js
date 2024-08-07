@@ -30,12 +30,12 @@ export default function Home() {
     <div className="flex flex-col min-h-screen bg-black">
       {/* <Navbar /> */}
       <main className="flex-grow items-center justify-center">
-        <AnimatePresence mode="wait">
+        {/* <AnimatePresence mode="wait">
           {isLoading && <Preloader />}
         </AnimatePresence>
         <Scene />
-        <Timer />
-        {/* <RegisterPage /> */}
+        <Timer /> */}
+        <RegisterPage />
       </main>
     </div>
   );

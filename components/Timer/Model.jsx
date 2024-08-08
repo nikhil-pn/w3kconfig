@@ -89,7 +89,7 @@ function Font({ timeLeft }) {
       <Text font={src} position={[0, 0, -0.1]} fontSize={0.1} {...textOption}>
         {timerText}
       </Text>
-      <Text
+      {/* <Text
         font={src}
         position={[0, -0.1, -0.1]}
         fontSize={0.03}
@@ -99,7 +99,7 @@ function Font({ timeLeft }) {
       </Text>
       <Mesh font={src} position={[0, 0, 0]} fontSize={0.3}>
         <TwitterX />
-      </Mesh>
+      </Mesh> */}
     </group>
   );
 }

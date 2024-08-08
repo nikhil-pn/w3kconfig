@@ -9,7 +9,7 @@
     margin: 5% auto 5%;
     width: 50%;
     border-radius: 0.4cm;
-    height: 750px;
+    height: 380px;
     z-index: 2;
 }
 
@@ -18,7 +18,7 @@
     position: absolute;
     border-radius: 0.4cm;
     left: 35px;
-    top: -1px;
+    top: -2px;
     background: linear-gradient(45deg,#e6fb04,#ff6600,#00ff66
     ,#00ffff,#ff00ff,#ff0099,#6e0dd0,#ff3300,#099fff);
     background-size: 400%;

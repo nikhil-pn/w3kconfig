@@ -30,7 +30,7 @@ export default function Model() {
         anchorX="center"
         anchorY="middle"
       >
-        w3k Conference 2024
+        W3K CONFERENCE 2024
       </Text>
       <mesh ref={torus} {...nodes.Torus002}>
         <MeshTransmissionMaterial {...materialProps} />

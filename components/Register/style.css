@@ -10,7 +10,7 @@
     width: 50%;
     border-radius: 0.4cm;
     height: 750px;
-    z-index: 0;
+    z-index: 2;
 }
 
 .glow::before , .glow::after{
@@ -24,7 +24,7 @@
     background-size: 400%;
     width: calc(100% - 70px);
     height: calc(100% + 37px);
-    z-index: -1;
+    z-index: -2;
     animation: animate 20s linear infinite;
 }
 
@@ -47,3 +47,17 @@
     filter: blur(20px);
     /* opacity: 0.99; */
 }
+/* 
+.buttonn{
+    position: relative;
+    z-index: 0;
+}
+.overlay{
+    width: 100%;
+    background: linear-gradient(45deg,
+    #ff0000,#ff7300,#fffb00,#48ff00,#00ffd5,#002bff,#ff00c8,#ff0000
+    );
+    position: relative;
+    background-size: 600%;
+    z-index: 100;
+} */

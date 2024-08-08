@@ -17,7 +17,6 @@ const AstronautCard = ({ onClose }) => {
           <ol>
             <li>1.Follow me on X</li>
             <li>2.Post a photo of this event on X</li>
-            <li>3.Create a meme about this event and post it on X</li>
           </ol></div>
           <p>Don't forget to tag me!</p>
         </div>

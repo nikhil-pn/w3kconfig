@@ -4,6 +4,7 @@ import { AnimatePresence } from "framer-motion";
 import Preloader from "../components/Preloader";
 import Navbar from "../components/NavBar/Navbar";
 import dynamic from "next/dynamic";
+import Treasurehunt from "../components/TreasureHunt/treasureHunt";
 import Timer from "@/components/Timer/timer";
 import { RegisterPage } from "@/components/Register";
 import Paragraph from "@/components/Event-description/Paragraph";
@@ -51,6 +52,7 @@ export default function Home() {
         <Character paragraph={paragraph} />
         <div style={{ height: "100vh" }}></div>
       </main>
+      <Treasurehunt />
     </div>
   );
 }

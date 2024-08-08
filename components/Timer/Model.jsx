@@ -81,25 +81,14 @@ function Font({ timeLeft }) {
 
   const timerText =
     timeLeft.days !== undefined
-      ? `${timeLeft.days}d ${timeLeft.hours}h ${timeLeft.minutes}m ${timeLeft.seconds}s`
+      ? `${timeLeft.days}D ${timeLeft.hours}h ${timeLeft.minutes}m ${timeLeft.seconds}s`
       : "Event is Live!";
 
   return (
     <group>
-      <Text font={src} position={[0, 0, -0.1]} fontSize={0.1} {...textOption}>
+      <Text font={src} position={[0, 0, -0.1]} fontSize={0.2} {...textOption}>
         {timerText}
       </Text>
-      {/* <Text
-        font={src}
-        position={[0, -0.1, -0.1]}
-        fontSize={0.03}
-        {...textOption}
-      >
-        Follow us on
-      </Text>
-      <Mesh font={src} position={[0, 0, 0]} fontSize={0.3}>
-        <TwitterX />
-      </Mesh> */}
     </group>
   );
 }
@@ -107,10 +96,10 @@ function Font({ timeLeft }) {
 function Mesh({ data }) {
   // Define default material props
   const defaultMaterialProps = {
-    thickness: 0.275,
+    thickness: 0.075,
     ior: 1.8,
-    chromaticAberration: 0.75,
-    resolution: 300,
+    chromaticAberration: 0.5,
+    resolution: 800,
   };
 
   return (

@@ -38,21 +38,20 @@ export default function Home() {
     <div className="flex flex-col min-h-screen bg-black">
       <Navbar />
       <main className="flex-grow items-center justify-center">
-        <AnimatePresence mode="wait">
+        {/* <AnimatePresence mode="wait">
           {isLoading && <Preloader />}
-        </AnimatePresence>
+        </AnimatePresence> */}
         <Scene />
-        <Timer />
-        <RegisterPage />
-        <div style={{ height: "100vh" }}></div>
-        <Paragraph paragraph={paragraph} />
-        <div style={{ height: "100vh" }}></div>
-        <Word paragraph={paragraph} />
-        <div style={{ height: "100vh" }}></div>
-        <Character paragraph={paragraph} />
-        <div style={{ height: "100vh" }}></div>
       </main>
+      {/* <RegisterPage /> */}
+      {/* <div style={{ height: "100vh" }}></div>
+      <Paragraph paragraph={paragraph} /> */}
+      <Word paragraph={paragraph} />
       <Treasurehunt />
+      {/* <div style={{ height: "100vh" }}></div> */}
+      {/* <Character paragraph={paragraph} />
+      <div style={{ height: "100vh" }}></div> */}
+      <Timer />
     </div>
   );
 }

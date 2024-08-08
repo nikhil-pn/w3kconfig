@@ -5,6 +5,14 @@ import Preloader from "../components/Preloader";
 import Navbar from "../components/NavBar/Navbar";
 import dynamic from "next/dynamic";
 import Treasurehunt from "../components/TreasureHunt/treasureHunt";
+import Timer from "@/components/Timer/timer";
+import { RegisterPage } from "@/components/Register";
+import Paragraph from "@/components/Event-description/Paragraph";
+import Word from "@/components/Event-description/Word";
+import Character from "@/components/Event-description/Character";
+
+const paragraph =
+  "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.";
 
 const Scene = dynamic(() => import("@/components/Scene"), {
   ssr: false,
@@ -12,6 +20,7 @@ const Scene = dynamic(() => import("@/components/Scene"), {
 
 export default function Home() {
   const [isLoading, setIsLoading] = useState(true);
+  const words = paragraph.split(" ");
 
   useEffect(() => {
     (async () => {
@@ -28,11 +37,20 @@ export default function Home() {
   return (
     <div className="flex flex-col min-h-screen bg-black">
       <Navbar />
-      <main className="flex-grow flex items-center justify-center">
+      <main className="flex-grow items-center justify-center">
         <AnimatePresence mode="wait">
           {isLoading && <Preloader />}
         </AnimatePresence>
         <Scene />
+        <Timer />
+        <RegisterPage />
+        <div style={{ height: "100vh" }}></div>
+        <Paragraph paragraph={paragraph} />
+        <div style={{ height: "100vh" }}></div>
+        <Word paragraph={paragraph} />
+        <div style={{ height: "100vh" }}></div>
+        <Character paragraph={paragraph} />
+        <div style={{ height: "100vh" }}></div>
       </main>
       <Treasurehunt />
     </div>

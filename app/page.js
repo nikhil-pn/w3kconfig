@@ -1,10 +1,10 @@
 "use client";
-import { useEffect, useState } from "react";
-import { AnimatePresence } from "framer-motion";
-import Preloader from "../components/Preloader";
+import BitrootChat from "../components/BitrootChat/BitrootChat";
 import Navbar from "../components/NavBar/Navbar";
+import Preloader from "../components/Preloader";
+import { AnimatePresence } from "framer-motion";
 import dynamic from "next/dynamic";
-import BitrootChat from "@/components/BitrootChat";
+import { useEffect, useState } from "react";
 
 const Scene = dynamic(() => import("@/components/Scene"), {
   ssr: false,
@@ -26,15 +26,17 @@ export default function Home() {
   }, []);
 
   return (
-    <div className="flex flex-col min-h-screen bg-black">
-      <Navbar />
-      <main className="flex-grow flex items-center justify-center">
-        <AnimatePresence mode="wait">
+    <>
+      <div className="flex flex-col min-h-screen">
+        <Navbar />
+        <main className="flex-grow flex items-center justify-center">
+          {/* <AnimatePresence mode="wait">
           {isLoading && <Preloader />}
-        </AnimatePresence>
-        <Scene />
-      </main>
+        </AnimatePresence> */}
+          <Scene />
+        </main>
+      </div>
       <BitrootChat />
-    </div>
+    </>
   );
 }

@@ -12,7 +12,7 @@ import Word from "@/components/Event-description/Word";
 import Character from "@/components/Event-description/Character";
 
 const paragraph =
-  "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.";
+  "It is a long established fact that a reader will be distracted by hfkjfkjksdthe readable content of a page when looking at its layout  that a reader will be distracted by the readable content of a page when looking at its layout.";
 
 const Scene = dynamic(() => import("@/components/Scene"), {
   ssr: false,
@@ -35,7 +35,7 @@ export default function Home() {
   }, []);
 
   return (
-    <div className="flex flex-col min-h-screen bg-black">
+    <div className="flex flex-col min-h-screen bg-black pb-24">
       <Navbar />
       <main className="flex-grow items-center justify-center">
         <AnimatePresence mode="wait">
@@ -44,8 +44,9 @@ export default function Home() {
         <Scene />
       </main>
       <Word paragraph={paragraph} />
-      <Treasurehunt />
-      <Timer />
+
+      {/* <Treasurehunt /> */}
+      {/* <Timer /> */}
     </div>
   );
 }

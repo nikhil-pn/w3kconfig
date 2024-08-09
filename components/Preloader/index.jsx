@@ -5,20 +5,15 @@ import { motion } from "framer-motion";
 import { opacity, slideUp } from "./anim";
 
 const words = [
-  "W3K",
   "\\z/",
+  "BTC India",
+  "0XRabble",
+  "BLOCKCHAINED INDIA",
+  "PUNE DAO",
+  "HEADSTART",
+  "WEB3CHENNAI",
+  "ETHPONDY",
   "ROAD TO DEVCON",
-  "CRYPTO KERALA",
-  "ETH GLOBAL",
-  "SUPERTEAM",
-  "SheFI",
-  "SwapSo",
-  "FOUNDERSHIP",
-  "HASHED EMERGENT",
-  "WEB3 MEETUPS",
-  "WEB3 BHARAT",
-  "WEB3 CANADA",
-  "STATION3",
 ];
 
 export default function Index() {
@@ -35,7 +30,7 @@ export default function Index() {
       () => {
         setIndex(index + 1);
       },
-      index == 0 ? 1000 : 300
+      index == 0 ? 1000 : 500
     );
   }, [index]);
 

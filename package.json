@@ -9,16 +9,33 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@react-three/drei": "^9.109.1",
+    "@radix-ui/react-label": "^2.1.0",
+    "@react-three/drei": "^9.109.2",
     "@react-three/fiber": "^8.16.8",
-    "framer-motion": "^11.3.8",
+    "@tabler/icons-react": "^3.11.0",
+    "clsx": "^2.1.1",
+    "framer-motion": "^11.3.21",
+    "js-confetti": "^0.12.0",
+    "leaflet": "^1.9.4",
+    "leva": "^0.9.35",
     "locomotive-scroll": "^4.1.4",
     "next": "14.2.5",
     "react": "^18",
+    "react-confetti": "^6.1.0",
     "react-dom": "^18",
+    "react-icons": "^5.2.1",
+    "react-leaflet": "^4.2.1",
+    "react-responsive": "^10.0.0",
     "saas": "^1.0.0",
+<<<<<<< HEAD
     "three": "^0.166.1",
     "ui": "github:shadcn/ui"
+=======
+    "tailwind-merge": "^2.4.0",
+    "three": "^0.166.1",
+    "tsparticles": "^3.5.0",
+    "tsparticles-engine": "^2.12.0"
+>>>>>>> a268ec058a0cb550a7012011cc7d88536f8df632
   },
   "devDependencies": {
     "eslint": "^8",

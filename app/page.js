@@ -1,5 +1,4 @@
 "use client";
-import BitrootChat from "../components/BitrootChat/BitrootChat";
 import Navbar from "../components/NavBar/Navbar";
 import Preloader from "../components/Preloader";
 import { AnimatePresence } from "framer-motion";
@@ -36,7 +35,6 @@ export default function Home() {
           <Scene />
         </main>
       </div>
-      <BitrootChat />
     </>
   );
 }

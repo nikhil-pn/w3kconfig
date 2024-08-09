@@ -1,4 +1,5 @@
 "use client";
+
 import Navbar from "../components/NavBar/Navbar";
 import Preloader from "../components/Preloader";
 import { AnimatePresence } from "framer-motion";
@@ -29,9 +30,9 @@ export default function Home() {
       <div className="flex flex-col min-h-screen">
         <Navbar />
         <main className="flex-grow flex items-center justify-center">
-          {/* <AnimatePresence mode="wait">
-          {isLoading && <Preloader />}
-        </AnimatePresence> */}
+          <AnimatePresence mode="wait">
+            {isLoading && <Preloader />}
+          </AnimatePresence>
           <Scene />
         </main>
       </div>

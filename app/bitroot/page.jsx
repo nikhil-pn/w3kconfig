@@ -1,4 +1,5 @@
-'use client'
+"use client"
+
 import React, { useState, useEffect } from "react";
 import "./BitrootChat.css";
 
@@ -39,7 +40,7 @@ const BitrootChat = () => {
 
   const displayMessage = () => {
     setClickCount((prevCount) => prevCount + 1);
-    var check = false
+    var check = false;
 
     if (clickCount >= 5) {
       const index = clickCount - 5;
@@ -58,7 +59,9 @@ const BitrootChat = () => {
 
     if (["hello"].includes(message.trim().toLowerCase())) {
       window.location.href = "https://www.youtube.com/watch?v=CVsbTCdTyAM";
-    } else if (["hi", "hey", "gm", "gm gm"].includes(message.trim().toLowerCase())) {
+    } else if (
+      ["hi", "hey", "gm", "gm gm"].includes(message.trim().toLowerCase())
+    ) {
       window.location.href = "https://www.youtube.com/watch?v=xvFZjo5PgG0";
     }
 
@@ -74,8 +77,8 @@ const BitrootChat = () => {
       window.open("https://lu.ma/4j0wylud?tk=g8Gq5T", "_blank");
     }
 
-    if(randomText === "𝙖𝙡𝙧𝙞𝙜𝙝𝙩! 𝙮𝙤𝙪 𝙜𝙤𝙩 𝙢𝙚."){
-      window.location.href = "https://github.com/AthenaFoss/Bitroot.Zo"
+    if (randomText === "𝙖𝙡𝙧𝙞𝙜𝙝𝙩! 𝙮𝙤𝙪 𝙜𝙤𝙩 𝙢𝙚.") {
+      window.location.href = "https://github.com/AthenaFoss/Bitroot.Zo";
     }
   };
 

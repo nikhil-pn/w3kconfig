@@ -136,9 +136,29 @@ function LeafletMap() {
         </Marker>
         <Marker position={boCoord} icon={defaultIcon} eventHandlers={{ click: () => travel("hq") }} />
         {position !== hqCoord && position !== boCoord && (
-          <Marker position={position} icon={defaultIcon}>
-            <Popup>Searched Location</Popup>
-          </Marker>
+          <Marker
+          position={hqCoord}
+          icon={defaultIcon}
+          eventHandlers={{ click: () => travel("bo") }}
+        >
+          <Popup>
+            <div>
+              <svg x="0px" y="0px" viewBox="0 0 60 60" fill="#000">
+                <polygon points="3,50 11,50 11,14.3 3,18.5" />
+                <polygon points="39,24.8 39,18.6 56,33.1 56,31.6 35.6,10.4 19,18.2 19,23.3 14,25.5 14,50 21,50 21,22 25,22 25,50 56,50 56,47.9 39,47 39,42.7 56,45.2 56,43.5 39,39.8 39,35.6 56,40.5 56,38.8 39,33.4 39,27.7 56,36.4 56,34.6" />
+              </svg>
+              <div>
+                <span>
+                  <br />
+                  Kerala Startup Mission<br />
+                  Kalamassery, Kochi.<br />
+                </span>
+                <hr />
+                <a href="https://www.google.com/maps/place/Kerala+Startup+Mission/@10.0561449,76.3508183,17z/data=!3m1!4b1!4m6!3m5!1s0x3b080c04e2534d9f:0x57a3a39e6b6b4514!8m2!3d10.0561396!4d76.3533932!16s%2Fg%2F1hc1wx315?entry=ttu" onClick={(e) => { e.preventDefault(); travel("bo"); }}>To Conference</a>
+              </div>
+            </div>
+          </Popup>
+        </Marker>
         )}
       </Map>
       <SearchControl />

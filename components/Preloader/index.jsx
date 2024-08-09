@@ -6,13 +6,13 @@ import { opacity, slideUp } from "./anim";
 
 const words = [
   "\\z/",
-  "ETH GLOBAL",
-  "SUPERTEAM",
-  "SHEFI",
-  "SWAPSO",
-  "FOUNDERSHIP",
-  "HASHED EMERGENT",
-  "WEB3 MEETUPS",
+  "BTC India",
+  "0XRabble",
+  "BLOCKCHAINED INDIA",
+  "PUNE DAO",
+  "HEADSTART",
+  "WEB3CHENNAI",
+  "ETHPONDY",
   "ROAD TO DEVCON",
 ];
 

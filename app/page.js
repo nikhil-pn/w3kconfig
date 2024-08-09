@@ -4,7 +4,7 @@ import { AnimatePresence } from "framer-motion";
 import Preloader from "../components/Preloader";
 import Navbar from "../components/NavBar/Navbar";
 import dynamic from "next/dynamic";
-import Treasurehunt from "../components/TreasureHunt/treasureHunt";
+import TreasureHunt from "../components/TreasureHunt/treasureHunt";
 
 const Scene = dynamic(() => import("@/components/Scene"), {
   ssr: false,
@@ -34,7 +34,7 @@ export default function Home() {
         </AnimatePresence>
         <Scene />
       </main>
-      <Treasurehunt />
+      <TreasureHunt />
     </div>
   );
 }

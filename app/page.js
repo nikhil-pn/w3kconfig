@@ -9,10 +9,7 @@ import Preloader from "../components/Preloader";
 import Navbar from "../components/NavBar/Navbar";
 import dynamic from "next/dynamic";
 import Timer from "@/components/Timer/timer";
-import { RegisterPage } from "@/components/Register";
-import Paragraph from "@/components/Event-description/Paragraph";
 import Word from "@/components/Event-description/Word";
-import Character from "@/components/Event-description/Character";
 
 const paragraph =
   "Gm GM, listen up! This site’s got all the deets on the event—speakers, location, Bounty's, all that jazz. But, you gotta hunt for it, fam!  Happy Digging                                 First hint: All the secrets are buried deep in the console.";
@@ -62,10 +59,6 @@ export default function Home() {
       </main>
       <Word paragraph={paragraph} />
       <div className="mt-20"></div>
-      <Map></Map>
-
-      {/* <Treasurehunt /> */}
-      {/* <Timer /> */}
     </div>
   );
 }

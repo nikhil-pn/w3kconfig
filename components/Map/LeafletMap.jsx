@@ -30,6 +30,7 @@ function LeafletMap() {
       }, 2800);
     }
   }, []);
+  console.log(" Okay, there's not much on the console tab here, just a bunch of errors we didn't get time to fix!");
 
   const defaultIcon = new L.Icon({
     iconUrl: 'https://unpkg.com/leaflet@1.7.1/dist/images/marker-icon.png',

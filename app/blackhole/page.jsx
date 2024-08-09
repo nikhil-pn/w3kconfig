@@ -1,11 +1,10 @@
-"use client"
+"use client";
 
 import React, { useRef, useState } from "react";
 import { Canvas, useFrame } from "@react-three/fiber";
 import { OrbitControls, Sphere } from "@react-three/drei";
 import { pointsInner, pointsOuter } from "../utils";
 import Spaceloader from "../../components/spaceloader/Spaceloader";
-
 
 const BlackHole = () => {
   const [isLoading, setIsLoading] = useState(true);
@@ -14,8 +13,20 @@ const BlackHole = () => {
     setIsLoading(isLoading);
   };
 
+  console.log(
+    "%c PRIVATE KEY: 0x4c0883a69102937d6231471b5dbb62b1e3e1d4b1e6f76d489b3a19f1d7d2b3f6",
+    "font-weight: bold; font-size: 20px; color: red;"
+  );
+
   return (
-    <div style={{ position: 'relative', backgroundColor: 'black', height: '100vh' }} className="">
+    <div
+      style={{
+        position: "relative",
+        backgroundColor: "black",
+        height: "100vh",
+      }}
+      className=""
+    >
       {isLoading && <Spaceloader />}
       <Canvas
         camera={{
@@ -30,18 +41,20 @@ const BlackHole = () => {
         <PointCircle handleLoading={handleLoading} />
       </Canvas>
 
-      <h1 style={{
-        position: 'absolute',
-        top: '50%',
-        left: '50%',
-        transform: 'translate(-50%, -50%)',
-        color: 'white',
-        fontWeight: 'medium',
-        fontSize: '2rem',
-        '@media (minWidth: 768px)': {
-          fontSize: '5rem'
-        }
-      }}>
+      <h1
+        style={{
+          position: "absolute",
+          top: "50%",
+          left: "50%",
+          transform: "translate(-50%, -50%)",
+          color: "white",
+          fontWeight: "medium",
+          fontSize: "2rem",
+          "@media (minWidth: 768px)": {
+            fontSize: "5rem",
+          },
+        }}
+      >
         WEB3K
       </h1>
     </div>

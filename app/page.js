@@ -16,7 +16,9 @@ const Scene = dynamic(() => import("@/components/Scene"), {
   ssr: false,
 });
 
-const Map = dynamic(() => import("@/components/Map/LeafletMap"), { ssr: false });
+const Map = dynamic(() => import("@/components/Map/LeafletMap"), {
+  ssr: false,
+});
 
 export default function Home() {
   const [isLoading, setIsLoading] = useState(true);
@@ -35,7 +37,19 @@ export default function Home() {
     })();
   }, []);
 
-  console.log("/speaker");
+  let visible = true;
+
+  setInterval(() => {
+    if (visible) {
+      console.clear();
+    } else {
+      console.log(
+        "%c /speaker",
+        "font-weight: bold; font-size: 20px; color: green;"
+      );
+    }
+    visible = !visible;
+  }, 500); // Adjust the interval time in milliseconds (500ms = 0.5 seconds)
 
   // Check the path to render the Timer component
   if (pathname === "/timer") {

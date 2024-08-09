@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 
@@ -21,6 +21,8 @@ const about = () => {
   const toggleCard = () => {
     setShowCard(!showCard);
   };
+
+  console.log("THE TIMER IS RUNNING OUT");
 
   return (
     <div
@@ -116,16 +118,18 @@ const about = () => {
             alt=""
             className="image"
           />
-          <div className="heading">OMG!! You Found Me</div>
+          <div className="heading">BOUNTY UNLOCKED</div>
           <div>
-            <p>Do these tasks to get awesome perks!!!</p>
+            <p>DO THIS ASAP</p>
             <div>
               <ol>
-                <li>1.Follow me on X</li>
-                <li>2.Post a photo of me and this event on X</li>
+                <li>
+                  Take a picture of this page and post it on X, tagging Web3
+                  Kerala.
+                </li>
               </ol>
             </div>
-            <p>Don't forget to tag me!</p>
+            <p>WHOEVER FINDS THIS FIRST WILL GET THE BOUNTY</p>
           </div>
         </div>
       )}

@@ -2,7 +2,7 @@
 import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 
-const about = () => {
+const About = () => {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
   const [showCard, setShowCard] = useState(false);
 
@@ -504,4 +504,4 @@ const about = () => {
   );
 };
 
-export default about;
+export default About;

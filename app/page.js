@@ -1,12 +1,10 @@
-// app/page.js (or wherever your main component is)
-
 "use client";
+
 import { useEffect, useState } from "react";
 import { usePathname } from "next/navigation";
-
-import { AnimatePresence } from "framer-motion";
-import Preloader from "../components/Preloader";
 import Navbar from "../components/NavBar/Navbar";
+import Preloader from "../components/Preloader";
+import { AnimatePresence } from "framer-motion";
 import dynamic from "next/dynamic";
 import Timer from "@/components/Timer/timer";
 import Word from "@/components/Event-description/Word";

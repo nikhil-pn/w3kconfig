@@ -27,15 +27,10 @@
     "react-leaflet": "^4.2.1",
     "react-responsive": "^10.0.0",
     "saas": "^1.0.0",
-<<<<<<< HEAD
-    "three": "^0.166.1",
-    "ui": "github:shadcn/ui"
-=======
     "tailwind-merge": "^2.4.0",
     "three": "^0.166.1",
     "tsparticles": "^3.5.0",
     "tsparticles-engine": "^2.12.0"
->>>>>>> a268ec058a0cb550a7012011cc7d88536f8df632
   },
   "devDependencies": {
     "eslint": "^8",

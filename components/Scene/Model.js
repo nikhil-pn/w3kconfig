@@ -1,6 +1,7 @@
 import React, { useRef } from "react";
 import { MeshTransmissionMaterial, useGLTF, Text } from "@react-three/drei";
 import { useFrame, useThree } from "@react-three/fiber";
+import { useMediaQuery } from 'react-responsive';
 
 export default function Model() {
   const { nodes } = useGLTF("/medias/torrus.glb");
@@ -20,12 +21,14 @@ export default function Model() {
     backside: false,
   };
 
+  const isMobile = useMediaQuery({ query: '(max-width: 768px)' });
+
   return (
     <group scale={viewport.width / 3.5}>
       <Text
         font={"/fonts/PPNeueMontreal-Bold.otf"}
         position={[0, 0, -1]}
-        fontSize={0.5}
+        fontSize={isMobile ? 0.3 : 0.5} // Adjust font size based on screen size
         color="white"
         anchorX="center"
         anchorY="middle"
@@ -35,6 +38,17 @@ export default function Model() {
       <mesh ref={torus} {...nodes.Torus002}>
         <MeshTransmissionMaterial {...materialProps} />
       </mesh>
+      {isMobile && (
+        <Text
+          position={[0, -1, -1]}
+          fontSize={0.2}
+          color="white"
+          anchorX="center"
+          anchorY="middle"
+        >
+          For better view, use desktop
+        </Text>
+      )}
     </group>
   );
 }

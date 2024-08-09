@@ -2,9 +2,7 @@
 import button from "./button.css";
 import { useState, useEffect } from 'react';
 
-import Link from 'next/link';
-
-const Button = () => {
+const Buttons = () => {
     const [isNavigating, setIsNavigating] = useState(false);
     const [menuIsActive, setMenuIsActive] = useState(true);
     useEffect(() => {
@@ -41,7 +39,7 @@ const Button = () => {
     );
   };
   
-  export default Button
+  export default Buttons
   
 
   

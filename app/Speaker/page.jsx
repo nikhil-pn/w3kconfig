@@ -1,11 +1,11 @@
 "use client";
+import Buttons from "@/components/Button/button";
 import Speaker from "../../components/Speaker/Speaker";
-import Button from "../../components/Button/Button";
 const Speakers = () => {
     return (
       <>
      <Speaker/>
-     <Button/>
+     <Buttons></Buttons>
       </>
       
     );

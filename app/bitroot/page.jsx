@@ -58,7 +58,7 @@ const BitrootChat = () => {
 
     if (["hello"].includes(message.trim().toLowerCase())) {
       window.location.href = "https://www.youtube.com/watch?v=CVsbTCdTyAM";
-    } else if (["hi", "hey"].includes(message.trim().toLowerCase())) {
+    } else if (["hi", "hey", "gm", "gm gm"].includes(message.trim().toLowerCase())) {
       window.location.href = "https://www.youtube.com/watch?v=xvFZjo5PgG0";
     }
 

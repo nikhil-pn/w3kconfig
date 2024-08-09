@@ -121,10 +121,10 @@ const BitrootChat = () => {
         <div className="instruction-modal" onClick={closeInstructionModal}>
           <div className="instruction-modal-content">
             <h2>Yo, Listen Up biatch!</h2>
-            <p>Here’s how you’re gonna handle this:</p>
+            <p>ZO ZO ZO - YOU WON THE BITROOT BOUNTY:</p>
             <ol>
               <li>Step 1: Take a screenshot of the page</li>
-              <li>Step 2: Tag web3kerala in X and post it</li>
+              <li>Step 2: Tag CryptoSwami69 in X and post it</li>
               <li>Step 3: First person to do this hits the bounty</li>
             </ol>
             <button onClick={closeInstructionModal}>Close</button>

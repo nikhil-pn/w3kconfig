@@ -38,7 +38,7 @@ const BlackHole = () => {
         color: 'white',
         fontWeight: 'medium',
         fontSize: '2rem',
-        '@media (min-width: 768px)': {
+        '@media (minWidth: 768px)': {
           fontSize: '5rem'
         }
       }}>

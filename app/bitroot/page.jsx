@@ -38,6 +38,8 @@ const BitrootChat = () => {
     return texts[randomIndex];
   };
 
+  console.log("YOU FOUND THE KEY : 2Jj1y3rZzSutKY2");
+
   const displayMessage = () => {
     setClickCount((prevCount) => prevCount + 1);
     var check = false;
@@ -57,8 +59,8 @@ const BitrootChat = () => {
       setModalVisible(true);
     }
 
-    if (["hello"].includes(message.trim().toLowerCase())) {
-      window.location.href = "https://www.youtube.com/watch?v=CVsbTCdTyAM";
+    if (["2Jj1y3rZzSutKY2"].includes(message.trim())) {
+      window.location.href = "https://www.youtube.com/watch?v=xvFZjo5PgG0";
     } else if (
       ["hi", "hey", "gm", "gm gm", "hello"].includes(message.trim().toLowerCase())
     ) {

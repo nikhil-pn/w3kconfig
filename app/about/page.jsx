@@ -1,6 +1,7 @@
 "use client";
 import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 const About = () => {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
@@ -90,7 +91,7 @@ const About = () => {
           }}
           onClick={toggleCard}
         >
-          <p>w3k</p>
+          <Image src="/images/w3k.png" alt="w3k" width={10} height={10} />{" "}
         </div>
       </motion.div>
       <motion.div

@@ -17,11 +17,18 @@ const paragraph =
 const Scene = dynamic(() => import("@/components/Scene/Index"), {
   ssr: false,
 });
+const LeafletMap = dynamic(() => import("../components/Map/LeafletMap"), {
+  ssr: false,
+});
 
 export default function Home() {
   const [isLoading, setIsLoading] = useState(true);
+<<<<<<< HEAD
   const words = paragraph.split(" ");
   const pathname = usePathname();
+=======
+  const [showMap, setShowMap] = useState(false);
+>>>>>>> e272af3968336c1402b4911e26506cbf4b2674c2
 
   useEffect(() => {
     let locomotiveScroll;
@@ -32,12 +39,18 @@ export default function Home() {
       
       setTimeout(() => {
         setIsLoading(false);
+<<<<<<< HEAD
         if (typeof document !== 'undefined') {
           document.body.style.cursor = "default";
         }
         if (typeof window !== 'undefined') {
           window.scrollTo(0, 0);
         }
+=======
+        document.body.style.cursor = "default";
+        window.scrollTo(0, 0);
+         setShowMap(true);
+>>>>>>> e272af3968336c1402b4911e26506cbf4b2674c2
       }, 5000);
     })();
   
@@ -78,7 +91,8 @@ export default function Home() {
         <AnimatePresence mode="wait">
           {isLoading && <Preloader />}
         </AnimatePresence>
-        <Scene />
+        {/*<Scene />*/}
+        {showMap && <LeafletMap />}
       </main>
       <Word paragraph={paragraph} />
       <div className="mt-20"></div>

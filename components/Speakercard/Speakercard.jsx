@@ -10,6 +10,7 @@ const Speakercard = ({ name }) => {
         />
         <div className="heading capitalize">{name}</div>
         <div className="icons"></div>
+        
       </div>
   );
 };

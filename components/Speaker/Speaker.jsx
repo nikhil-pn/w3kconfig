@@ -19,7 +19,6 @@ const Speaker = () => {
           className="image"
         />
         <a href="/bitroot">BITROOT(Not Human)</a>
-        <p>Find Bitroot to predict your crypto future!</p>
         <div className="icons"></div>
       </div>
       </div>

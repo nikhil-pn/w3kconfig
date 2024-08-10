@@ -1,12 +1,18 @@
-import Timer from '@/components/Timer/timer'
+"use client"
+import dynamic from 'next/dynamic'
 import React from 'react'
 
-function timer() {
+const Timer = dynamic(() => import('@/components/Timer/timer'), {
+  ssr: false,
+  loading: () => <p>Loading timer...</p>
+})
+
+function TimerPage() {
   return (
     <div>
-      <Timer></Timer>
+      <Timer />
     </div>
   )
 }
 
-export default timer
+export default TimerPage

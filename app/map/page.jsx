@@ -1,13 +1,18 @@
 "use client"
-import LeafletMap from '@/components/Map/LeafletMap'
+import dynamic from 'next/dynamic'
 import React from 'react'
 
-function map() {
+const LeafletMap = dynamic(() => import('@/components/Map/LeafletMap'), {
+  ssr: false,
+  loading: () => <p>Loading map...</p>
+})
+
+function Map() {
   return (
     <div>
-      <LeafletMap></LeafletMap>
+      <LeafletMap />
     </div>
   )
 }
 
-export default map
+export default Map

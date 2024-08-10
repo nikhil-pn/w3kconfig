@@ -24,11 +24,13 @@ function LeafletMap() {
   };
 
   useEffect(() => {
+    
     if (markerRef.current) {
       setTimeout(() => {
         markerRef.current.openPopup();
       }, 2800);
     }
+
   }, []);
   console.log(" Okay, there's not much on the console tab here, just a bunch of errors we didn't get time to fix!");
 

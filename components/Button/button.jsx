@@ -32,7 +32,7 @@ const Buttons = () => {
                     <span className="block"></span>
                     </span>
                 </div>
-                <span className="text">Don't get sucked in</span>
+                <span className="text">Dont get sucked in</span>
             </button>
           
       </div>

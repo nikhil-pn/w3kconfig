@@ -12,29 +12,20 @@
     "@radix-ui/react-label": "^2.1.0",
     "@react-three/drei": "^9.109.2",
     "@react-three/fiber": "^8.16.8",
-<<<<<<< HEAD
     "@tabler/icons-react": "^3.11.0",
     "clsx": "^2.1.1",
     "framer-motion": "^11.3.21",
     "js-confetti": "^0.12.0",
     "leaflet": "^1.9.4",
     "leva": "^0.9.35",
-=======
-    "framer-motion": "^11.3.8",
-    "leaflet": "^1.9.4",
->>>>>>> e272af3968336c1402b4911e26506cbf4b2674c2
     "locomotive-scroll": "^4.1.4",
     "next": "14.2.5",
     "react": "^18",
     "react-confetti": "^6.1.0",
     "react-dom": "^18",
-<<<<<<< HEAD
     "react-icons": "^5.2.1",
     "react-leaflet": "^4.2.1",
     "react-responsive": "^10.0.0",
-=======
-    "react-leaflet": "^4.2.1",
->>>>>>> e272af3968336c1402b4911e26506cbf4b2674c2
     "saas": "^1.0.0",
     "tailwind-merge": "^2.4.0",
     "three": "^0.166.1",

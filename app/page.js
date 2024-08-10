@@ -6,15 +6,15 @@ import Navbar from "../components/NavBar/Navbar";
 import Preloader from "../components/Preloader";
 import { AnimatePresence } from "framer-motion";
 import dynamic from "next/dynamic";
-import Word from "@/components/Event-description/Word";
+import Word from "../components/Event-description/Word";
 
-const Timer = dynamic(() => import("@/components/Timer/timer"), {
+const Timer = dynamic(() => import("../components/Timer/timer"), {
   ssr: false,
 });
 const paragraph =
   "Gm GM, listen up! This site’s got all the deets on the event—speakers, location, Bounty's, all that jazz. But, you gotta hunt for it, fam!  Happy Digging                                 First hint: All the secrets are buried deep in the console.";
 
-const Scene = dynamic(() => import("@/components/Scene/Index"), {
+const Scene = dynamic(() => import("../components/Scene/Index"), {
   ssr: false,
 });
 
@@ -25,28 +25,28 @@ export default function Home() {
 
   useEffect(() => {
     let locomotiveScroll;
-    
+
     (async () => {
       const LocomotiveScroll = (await import("locomotive-scroll")).default;
       locomotiveScroll = new LocomotiveScroll();
-      
+
       setTimeout(() => {
         setIsLoading(false);
-        if (typeof document !== 'undefined') {
+        if (typeof document !== "undefined") {
           document.body.style.cursor = "default";
         }
-        if (typeof window !== 'undefined') {
+        if (typeof window !== "undefined") {
           window.scrollTo(0, 0);
         }
       }, 5000);
     })();
-  
+
     return () => {
       if (locomotiveScroll) {
         locomotiveScroll.destroy();
       }
     };
-  }, []); 
+  }, []);
 
   let visible = true;
 

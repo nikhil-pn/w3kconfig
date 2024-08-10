@@ -55,7 +55,7 @@ export default function Home() {
       console.clear();
     } else {
       console.log(
-        "%c /speaker",
+        "%c /Speaker",
         "font-weight: bold; font-size: 20px; color: green;"
       );
     }

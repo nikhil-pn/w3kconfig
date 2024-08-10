@@ -14,8 +14,8 @@ const BlackHole = () => {
   };
 
   console.log(
-    "%c PRIVATE KEY: 0x4c0883a69102937d6231471b5dbb62b1e3e1d4b1e6f76d489b3a19f1d7d2b3f6",
-    "font-weight: bold; font-size: 20px; color: red;"
+    "%c Seed Phrase: provide solid talent ticket huge comfort omit goose modify hood emerge velvet wrap month sight opera night lake jeans body lyrics boring seven course",
+    "font-weight: bold; font-size: 12px; color: red;"
   );
 
   return (
@@ -55,7 +55,8 @@ const BlackHole = () => {
           },
         }}
       >
-        WEB3K
+        Lost in the vastness of interstellar space, the map is your guide. Let
+        it lead you to where you are meant to be.
       </h1>
     </div>
   );

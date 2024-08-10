@@ -12,7 +12,7 @@ const Timer = dynamic(() => import("../components/Timer/timer"), {
   ssr: false,
 });
 const paragraph =
-  "Gm GM, listen up! This site’s got all the deets on the event—speakers, location, Bounty's, all that jazz. But, you gotta hunt for it, fam!  Happy Digging                                 First hint: All the secrets are buried deep in the console.";
+  "Gm GM, listen up! This site got all the deets on the event—speakers, location, Bounty's, all that jazz. But, you gotta hunt for it, fam!  Happy Digging                                 First hint: All the secrets are buried deep in the console.";
 
 const Scene = dynamic(() => import("../components/Scene/Index"), {
   ssr: false,

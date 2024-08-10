@@ -119,9 +119,10 @@ const About = () => {
             alt=""
             className="image"
           />
-          <div className="heading">BOUNTY UNLOCKED</div>
+          <div className="heading">
+            Congratzz you Unlocked BITROOT BOUNTY! Tweet it ASAP
+          </div>
           <div>
-            <p>DO THIS ASAP</p>
             <div>
               <ol>
                 <li>
@@ -130,7 +131,7 @@ const About = () => {
                 </li>
               </ol>
             </div>
-            <p>WHOEVER FINDS THIS FIRST WILL GET THE BOUNTY</p>
+            <p>FIRST 5 PERSONS WILL GET THE BOUNTY</p>
           </div>
         </div>
       )}

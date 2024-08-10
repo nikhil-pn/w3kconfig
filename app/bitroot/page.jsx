@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import React, { useState, useEffect } from "react";
 import "./BitrootChat.css";
@@ -62,7 +62,9 @@ const BitrootChat = () => {
     if (["2Jj1y3rZzSutKY2"].includes(message.trim())) {
       window.location.href = "https://www.youtube.com/watch?v=xvFZjo5PgG0";
     } else if (
-      ["hi", "hey", "gm", "gm gm", "hello"].includes(message.trim().toLowerCase())
+      ["hi", "hey", "gm", "gm gm", "hello"].includes(
+        message.trim().toLowerCase()
+      )
     ) {
       window.location.href = "https://www.youtube.com/watch?v=xvFZjo5PgG0";
     }
@@ -120,12 +122,14 @@ const BitrootChat = () => {
       {instructionModalVisible && (
         <div className="instruction-modal" onClick={closeInstructionModal}>
           <div className="instruction-modal-content">
-            <h2>Yo, Listen Up biatch!</h2>
-            <p>ZO ZO ZO - YOU WON THE BITROOT BOUNTY:</p>
+            <h2>Congratzz you Unlocked BITROOT BOUNTY! Tweet it ASAP</h2>
+            <p>
+              <div className="heading"></div>
+            </p>
             <ol>
               <li>Step 1: Take a screenshot of the page</li>
-              <li>Step 2: Tag CryptoSwami69 in X and post it</li>
-              <li>Step 3: First person to do this hits the bounty</li>
+              <li>Step 2: Tag https://x.com/cryptoswami69 and https://x.com/BLRxZo in X and post it</li>
+              <li>Step 3: First person to do this GET MEGA BOUNTY</li>
             </ol>
             <button onClick={closeInstructionModal}>Close</button>
           </div>

@@ -75,7 +75,7 @@ function LeafletMap() {
                 <span>
                   <br />
                   Congratzz you Unlocked SF BOUNTY!<br />
-                  Tweet it ASAP<br />
+                  Tweet it ASAP - FIRST 3 PEOPLE<br />
                 </span>
                 <hr />
                 {/* <a href="https://www.google.com/maps/place/Kerala+Startup+Mission/@10.0561449,76.3508183,17z/data=!3m1!4b1!4m6!3m5!1s0x3b080c04e2534d9f:0x57a3a39e6b6b4514!8m2!3d10.0561396!4d76.3533932!16s%2Fg%2F1hc1wx315?entry=ttu" target="_blank" >Big Bounties!</a> */}

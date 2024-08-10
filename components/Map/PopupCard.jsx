@@ -10,7 +10,7 @@ function PopupCard() {
                 className="image"
             />
             <div className="heading">Congratzz you Unlocked MOON BOUNTY!
-            Tweet it ASAP</div>
+            Tweet it ASAP - FIRST 3 PEOPLE</div>
         </div>
 
     )

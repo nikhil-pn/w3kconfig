@@ -38,7 +38,6 @@ const BitrootChat = () => {
     return texts[randomIndex];
   };
 
-  console.log("YOU FOUND THE KEY : 2Jj1y3rZzSutKY2");
 
   const displayMessage = () => {
     setClickCount((prevCount) => prevCount + 1);

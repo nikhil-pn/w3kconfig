@@ -27,7 +27,7 @@ export default function Model() {
     <group scale={viewport.width / 3.5}>
       <Text
         font={"/fonts/PPNeueMontreal-Bold.otf"}
-        position={[0, 1, -1]} // Adjusted position for better visibility
+        position={[0, 0, -1]} // Adjusted position for better visibility
         fontSize={isMobile ? 0.3 : 0.5}
         color="white"
         anchorX="center"

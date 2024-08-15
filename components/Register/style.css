@@ -1,4 +1,4 @@
-.body{
+.body {
     margin: 0;
     padding: 0;
     background-color: black;
@@ -9,18 +9,18 @@
     margin: 5% auto 5%;
     width: 50%;
     border-radius: 0.4cm;
-    height: 750px;
+    height: 380px;
     z-index: 2;
 }
 
-.glow::before , .glow::after{
+.glow::before,
+.glow::after {
     content: '';
     position: absolute;
     border-radius: 0.4cm;
     left: 35px;
-    top: -1px;
-    background: linear-gradient(45deg,#e6fb04,#ff6600,#00ff66
-    ,#00ffff,#ff00ff,#ff0099,#6e0dd0,#ff3300,#099fff);
+    top: -2px;
+    background: linear-gradient(45deg, #e6fb04, #ff6600, #00ff66, #00ffff, #ff00ff, #ff0099, #6e0dd0, #ff3300, #099fff);
     background-size: 400%;
     width: calc(100% - 70px);
     height: calc(100% + 37px);
@@ -30,13 +30,15 @@
 
 @keyframes animate {
 
-    0%{
+    0% {
         background-position: 0 0;
     }
-    50%{
+
+    50% {
         background-position: 400% 0;
     }
-    100%{
+
+    100% {
         background-position: 0 0;
     }
 
@@ -47,6 +49,7 @@
     filter: blur(20px);
     /* opacity: 0.99; */
 }
+
 /* 
 .buttonn{
     position: relative;

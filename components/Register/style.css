@@ -19,12 +19,12 @@
     content: '';
     position: absolute;
     border-radius: 0.4cm;
-    left: 35px;
-    top: -2px;
+    left: 115px;
+    top: 0px;
     background: linear-gradient(45deg, #e6fb04, #ff6600, #00ff66, #00ffff, #ff00ff, #ff0099, #6e0dd0, #ff3300, #099fff);
     background-size: 400%;
-    width: calc(100% - 70px);
-    height: calc(100% + 37px);
+    width: calc(100% - 230px);
+    height: calc(100% + 30px);
     z-index: -2;
     animation: animate 20s linear infinite;
 }

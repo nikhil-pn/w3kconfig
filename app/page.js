@@ -7,6 +7,7 @@ import Preloader from "../components/Preloader";
 import { AnimatePresence } from "framer-motion";
 import dynamic from "next/dynamic";
 import Word from "../components/Event-description/Word";
+import { RegisterPage } from "../components/Register/index";
 
 const Timer = dynamic(() => import("../components/Timer/timer"), {
   ssr: false,
@@ -17,7 +18,9 @@ const paragraph =
 const Scene = dynamic(() => import("../components/Scene/Index"), {
   ssr: false,
 });
-
+const Register = dynamic(() => import("../components/Register/index"), {
+  ssr: false,
+});
 export default function Home() {
   const [isLoading, setIsLoading] = useState(true);
   const words = paragraph.split(" ");
@@ -50,17 +53,17 @@ export default function Home() {
 
   let visible = true;
 
-  setInterval(() => {
-    if (visible) {
-      console.clear();
-    } else {
-      console.log(
-        "%c /Speaker",
-        "font-weight: bold; font-size: 20px; color: green;"
-      );
-    }
-    visible = !visible;
-  }, 500); // Adjust the interval time in milliseconds (500ms = 0.5 seconds)
+  // setInterval(() => {
+  //   if (visible) {
+  //     console.clear();
+  //   } else {
+  //     console.log(
+  //       "%c /Speaker",
+  //       "font-weight: bold; font-size: 20px; color: green;"
+  //     );
+  //   }
+  //   visible = !visible;
+  // }, 500); // Adjust the interval time in milliseconds (500ms = 0.5 seconds)
 
   // Check the path to render the Timer component
   if (pathname === "/timer") {
@@ -70,10 +73,17 @@ export default function Home() {
       </div>
     );
   }
+  if (pathname === "/register") {
+    return (
+      <div className="h-screen">
+        <Register />
+      </div>
+    );
+  }
 
   return (
     <div className="flex flex-col min-h-screen bg-black pb-24">
-      <Navbar />
+      {/* <Navbar /> */}
       <main className="flex-grow items-center justify-center">
         {/* <AnimatePresence mode="wait">
           {isLoading && <Preloader />}
@@ -87,8 +97,9 @@ export default function Home() {
         <div style={{ height: "100vh" }}></div>
         <Character paragraph={paragraph} />
         <div style={{ height: "100vh" }}></div> */}
+        <RegisterPage />
       </main>
-      <Word paragraph={paragraph} />
+      {/* <Word paragraph={paragraph} /> */}
       <div className="mt-20"></div>
     </div>
   );

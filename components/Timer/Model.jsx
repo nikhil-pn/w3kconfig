@@ -44,7 +44,7 @@ export default function Model() {
   }, [timeLeft]);
 
   function calculateTimeLeft() {
-    const eventDate = new Date("2024-08-17T11:00:00"); // 10:00 AM on Aug 17, 2024
+    const eventDate = new Date("2024-08-17T10:45:00"); // 10:00 AM on Aug 17, 2024
     const now = new Date();
     const difference = eventDate - now;
     let timeLeft = {};

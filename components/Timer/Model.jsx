@@ -44,7 +44,7 @@ export default function Model() {
   }, [timeLeft]);
 
   function calculateTimeLeft() {
-    const eventDate = new Date("2024-08-17T10:00:00"); // 10:00 AM on Aug 17, 2024
+    const eventDate = new Date("2024-08-17T11:00:00"); // 10:00 AM on Aug 17, 2024
     const now = new Date();
     const difference = eventDate - now;
     let timeLeft = {};
@@ -82,7 +82,7 @@ function Font({ timeLeft }) {
   const timerText =
     timeLeft.days !== undefined
       ? `${timeLeft.days}D ${timeLeft.hours}h ${timeLeft.minutes}m ${timeLeft.seconds}s`
-      : "Event is Live!";
+      : "W3K is Live!";
 
   return (
     <group>

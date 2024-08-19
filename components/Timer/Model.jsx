@@ -28,7 +28,7 @@ export default function Model() {
     if (timeLeft.days === undefined) {
       // Check event start
       if (jsConfettiRef.current) {
-        jsConfettiRef.current.addConfetti(); // Trigger confetti
+        // jsConfettiRef.current.addConfetti(); // Trigger confetti
       }
     } else {
       timer = setInterval(() => {
@@ -87,7 +87,8 @@ function Font({ timeLeft }) {
   return (
     <group>
       <Text font={src} position={[0, 0, -0.1]} fontSize={0.2} {...textOption}>
-        {timerText}
+        {/* {timerText} */}
+        Event has Ended
       </Text>
     </group>
   );
